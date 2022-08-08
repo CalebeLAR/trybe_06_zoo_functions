@@ -15,7 +15,6 @@ function animalsLists(species, specie, sex) {
 
   species.forEach((objAnimal) => {
     const { name, residents } = objAnimal;
-    // eslint-disable-next-line no-undef
     ResidentBySpecies[name] = residents.length;
     if (specie === name) {
       animalsBySex = residents
