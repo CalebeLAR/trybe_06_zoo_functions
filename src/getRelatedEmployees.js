@@ -6,9 +6,9 @@ function isManager(id) {
   employees.forEach((employee) => {
     const { managers } = employee;
     // eslint-disable-next-line no-shadow
-    managers.forEach((id) => {
-      if (!(managersList.includes(id))) {
-        managersList.push(id);
+    managers.forEach((managerId) => {
+      if (!(managersList.includes(managerId))) {
+        managersList.push(managerId);
       }
     });
   });
