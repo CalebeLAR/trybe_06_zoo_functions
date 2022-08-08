@@ -1,32 +1,35 @@
 const data = require('../data/zoo_data');
 
+function verificaParametro(animal) {
+  if (animal) {
+    const { specie } = animal;
+    const { sex } = animal;
+    return { specie, sex };
+  }
+  return {};
+}
+
 // eslint-disable-next-line max-lines-per-function, sonarjs/cognitive-complexity
 function countAnimals(animal) {
-  let specie;
-  let sex;
-  if (animal) {
-    specie = animal.specie;
-    sex = animal.sex;
-  }
+  const { specie, sex } = verificaParametro(animal);
   const { species } = data;
-  const animaisResidentesPorEspécie = {};
-  let numeroDeAnimaisPorSexo = 0;
+  const ResidentBySpecies = {};
+  let animalsBySex = 0;
 
   species.forEach((objAnimal) => {
     const { name, residents } = objAnimal;
-    animaisResidentesPorEspécie[name] = residents.length;
-    // eslint-disable-next-line no-const-assign
+    ResidentBySpecies[name] = residents.length;
     if (specie === name) {
-      // eslint-disable-next-line max-len
-      numeroDeAnimaisPorSexo = residents.reduce((acc, curr) => ((curr.sex === sex) ? acc + 1 : acc), 0);
+      animalsBySex = residents
+        .reduce((acc, curr) => ((curr.sex === sex) ? acc + 1 : acc), 0);
     }
   });
   if (specie === undefined && sex === undefined) {
-    return animaisResidentesPorEspécie;
+    return ResidentBySpecies;
   }
   if (sex === undefined) {
-    return animaisResidentesPorEspécie[specie];
+    return ResidentBySpecies[specie];
   }
-  return numeroDeAnimaisPorSexo;
+  return animalsBySex;
 }
 module.exports = countAnimals;
