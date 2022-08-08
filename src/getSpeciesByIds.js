@@ -4,19 +4,9 @@ function getSpeciesByIds(...ids) {
   if (ids.length === 0) {
     return [];
   }
-  const animalsList = [];
-  const especies = data['species'];
-  for (let especie of especies) {
-    //especie é um objeto, especies é um array de objetos;
-    for (let id of ids){        
-      if (id === especie.id){
-        animalsList.push(especie)
-      }
-    }
-  }
-  return animalsList;
+  const { species } = data;
+  const selectedSpecies = species.filter((obj) => (ids.includes(obj.id)));
+  return selectedSpecies;
 }
 
 module.exports = getSpeciesByIds;
-console.log(getSpeciesByIds('baa6e93a-f295-44e7-8f70-2bcdc6f6948d'));
-
