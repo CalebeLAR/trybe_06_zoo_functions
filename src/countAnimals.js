@@ -9,21 +9,28 @@ function verificaParametro(animal) {
   return {};
 }
 
-// eslint-disable-next-line max-lines-per-function, sonarjs/cognitive-complexity
-function countAnimals(animal) {
-  const { specie, sex } = verificaParametro(animal);
-  const { species } = data;
+function animalsLists(species, specie, sex) {
   const ResidentBySpecies = {};
   let animalsBySex = 0;
 
   species.forEach((objAnimal) => {
     const { name, residents } = objAnimal;
+    // eslint-disable-next-line no-undef
     ResidentBySpecies[name] = residents.length;
     if (specie === name) {
       animalsBySex = residents
         .reduce((acc, curr) => ((curr.sex === sex) ? acc + 1 : acc), 0);
     }
   });
+  return { ResidentBySpecies, animalsBySex };
+}
+
+function countAnimals(animal) {
+  const { specie, sex } = verificaParametro(animal);
+  const { species } = data;
+
+  const { ResidentBySpecies, animalsBySex } = animalsLists(species, specie, sex);
+
   if (specie === undefined && sex === undefined) {
     return ResidentBySpecies;
   }
