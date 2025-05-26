@@ -5,7 +5,6 @@ function isManager(id) {
   const managersList = [];
   employees.forEach((employee) => {
     const { managers } = employee;
-    // eslint-disable-next-line no-shadow
     managers.forEach((managerId) => {
       if (!(managersList.includes(managerId))) {
         managersList.push(managerId);
