@@ -23,7 +23,6 @@ Este repositório do projeto **Zoo Functions** da Trybe é a implementação de 
 <img alt="icon-jest" src="./readme-js-icon.webp" width="20"/>- Implementação da função `getEmployeesCoverage`. <br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação de testes com ao menos 85% de cobertura da função `getOpeningHours`. <br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação de testes com ao menos 95% de cobertura da função `getOpeningHours`. <br>
-<img alt="icon-jest" src="./readme-js-icon.webp" width="20"/>- Implementação da função `getAnimalMap`. <br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação de testes com 100% de cobertura da função `handlerElephants`. <br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação de testes com 100% de cobertura da função `getOpeningHours`. <br>
 
