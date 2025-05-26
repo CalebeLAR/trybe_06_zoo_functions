@@ -4,7 +4,7 @@ Este repositório do projeto **Zoo Functions** da Trybe é a implementação de 
 
 ## 🛠️ Tecnologias e Conceitos Utilizados
 - Ultilizar **Higher Order Functions** do **ES6**.  
-- **Organização do código** em funções pequenas simples bendefinidas.  
+- **Organização do código** em funções pequenas simples bem definidas.  
 - **Escrita e cobertura** de **testes automatizados** para reforçar a confiabilidade do código.  
 
 ## ✅ Funções Implementadas  
