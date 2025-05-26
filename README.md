@@ -9,7 +9,7 @@ Este repositório do projeto **Zoo Functions** da Trybe é a implementação de 
 
 ## ✅ Funções Implementadas  
 ### Requisitos do Projeto  
-<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `average`<br>
+<img alt="icon-jest" src="./readme-js-icon.webp" width="20"/> - Implementação da função `average`<br>
 <img alt="icon-jest" src="./readme-js-icon.webp" width="20"/>- Implementação da função `getSpeciesByIds`. <br>
 <img alt="icon-jest" src="./readme-js-icon.webp" width="20"/>- Implementação da função `getAnimalsOlderThan`. <br>
 <img alt="icon-jest" src="./readme-js-icon.webp" width="20"/>- Implementação da função `getEmployeeByName`. <br>
