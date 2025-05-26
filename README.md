@@ -1,6 +1,6 @@
 # Projeto Zoo Functions🚀
 
-Este repositório do projeto **Zoo Functions** da Trybe é a implementação de funções javascript ES6 que organizam as informações do zoológico.
+Este repositório do projeto **Zoo Functions** da Trybe é a implementação de funções javascript ES6 que organizam as informações do zoológico.  
 
 ## 🛠️ Tecnologias e Conceitos Utilizados
 - Ultilizar **Higher Order Functions** do **ES6**.  
